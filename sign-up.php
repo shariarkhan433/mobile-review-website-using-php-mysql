@@ -23,6 +23,9 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
     if($result){
         
         $success=1;
+        session_start();
+        $_SESSION['username']=$username;
+        header('location:test.php');
     }
     else{
         die(mysqli_error($con));
