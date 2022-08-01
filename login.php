@@ -19,7 +19,7 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
         $login=1;
         session_start();
         $_SESSION['username']=$username;
-        header('location:test.php');
+        header('location:admin_index.php');
 
     }else{
       $invalid=1;
